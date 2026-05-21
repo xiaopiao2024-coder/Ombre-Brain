@@ -21,8 +21,7 @@ COPY dashboard.html .
 COPY config.example.yaml ./config.yaml
 
 # Persistent mount point: bucket data
-# 持久化挂载点：记忆数据
-VOLUME ["/app/buckets"]
+# 持久化挂载点：记忆
 
 # Default to streamable-http for container (remote access)
 # 容器场景默认用 streamable-http
